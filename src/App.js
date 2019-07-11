@@ -6,7 +6,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // Component imports
 import Home from './components/Home'
 import Navigation from './components/Navigation'
-import Products from './components/Products'
+import ProductsList from './components/ProductsList'
+import ProductDetail from './components/ProductDetail'
 
 function App() {
   return (
@@ -15,10 +16,11 @@ function App() {
       {/* When you toss stuff in the Switch, it will only render the first matched <Route/> child */}
       <Switch>
         <Route exact path='/' component={Home} />
-        <Route path='/products' component={Products}/>
+        <Route path='/products/:id' component={ProductDetail} />
+        <Route exact path='/products' component={ProductsList} />
       </Switch>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App
