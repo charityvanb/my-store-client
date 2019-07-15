@@ -1,13 +1,17 @@
 import React from 'react'
 import logo from './logo.svg'
-import './App.scss'
+import './styles/global.scss'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // Component imports
+//Checking to see if it pushed properly
+
 import Home from './components/Home'
 import Navigation from './components/Navigation'
 import ProductsList from './components/ProductsList'
 import ProductDetail from './components/ProductDetail'
+import PaymentSuccess from './components/PaymentSucess'
+import PaymentCancel from './components/PaymentCancel'
 
 function App() {
   return (
@@ -18,6 +22,8 @@ function App() {
         <Route exact path='/' component={Home} />
         <Route path='/products/:id' component={ProductDetail} />
         <Route exact path='/products' component={ProductsList} />
+        <Route path='/success' component={PaymentSuccess} />
+        <Route path='/cancel' component={PaymentCancel} />
       </Switch>
     </Router>
   )
