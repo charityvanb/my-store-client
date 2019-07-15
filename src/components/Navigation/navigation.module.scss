@@ -1,0 +1,24 @@
+@import '../../styles/variables';
+
+nav.navigation {
+
+    padding: 1.25% 1.25% 1.25% 1.25%;
+
+    a{
+        margin: 10px 10px 10px 10px;
+        text-decoration: none;}
+    a:hover{
+        background-color: $dark;
+        color: $primary;
+    }
+    a:link{
+        color: $primary;
+    }
+    a:visited{
+        color: $darktext;
+    }
+    a:active{
+        color: $tertiary;
+    }
+
+}
