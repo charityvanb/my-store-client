@@ -8,7 +8,9 @@ nav.navigation {
 
     a{
         margin: 10px 10px 10px 10px;
-        text-decoration: none;}
+        text-decoration: none;
+        font-size: 1.2em;
+    }
     a:hover{
         background-color: $dark;
         color: $primary;
