@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Card from '../Card'
+import styles from './productdetail.module.scss'
 
 class ProductDetail extends Component {
   state = {
@@ -61,8 +62,8 @@ class ProductDetail extends Component {
 
   render() {
     return (
-      <div>
-        <h2>Welcome to Product Detail</h2>
+      <div className={styles.productdetail}>
+        <h2>About {this.state.product.name}</h2>
         <Card>
           <h2>{this.state.product.name}</h2>
           <img src={this.state.product.img_url} alt="product" />
