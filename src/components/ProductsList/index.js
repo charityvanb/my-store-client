@@ -26,7 +26,7 @@ class Products extends Component {
     return (
       <div className={styles.container}>
         <header>
-          <h1>Products!</h1>
+          <h1>Products</h1>
         </header>
         <div className={styles.productsContainer}>
           {this.state.products.map(product => {

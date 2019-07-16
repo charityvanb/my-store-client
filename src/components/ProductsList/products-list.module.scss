@@ -10,7 +10,12 @@
     grid-gap: 1rem;
 }
 
-  a{
-    text-decoration: none;
-    color: $primary;
-    }
+a{
+  text-decoration: none;
+  color: $primary;
+  }
+
+h1{
+  color: $darktext;
+  text-align: center;
+}
