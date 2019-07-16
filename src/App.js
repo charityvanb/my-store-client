@@ -1,7 +1,8 @@
 import React from 'react'
 import logo from './logo.svg'
 import './styles/global.scss'
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Profile from './components/Profile'
 
 // Component imports
 //Checking to see if it pushed properly
@@ -24,6 +25,7 @@ function App() {
         <Route exact path='/products' component={ProductsList} />
         <Route path='/success' component={PaymentSuccess} />
         <Route path='/cancel' component={PaymentCancel} />
+        <Route path='/profile' component={Profile} />
       </Switch>
     </Router>
   )
