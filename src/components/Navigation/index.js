@@ -11,13 +11,13 @@ const Navigation = () => {
       <Link to="/products">Products</Link>
       <Link to="/">Home</Link>
       {!isAuthenticated && (
-        <button
+        <Link
           onClick={() =>
             loginWithRedirect({})
           }
         >
           Log in
-        </button>
+        </Link>
       )}
 
       {isAuthenticated && <button onClick={() => logout()}>Log out</button>}
