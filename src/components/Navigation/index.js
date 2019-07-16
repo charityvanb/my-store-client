@@ -10,7 +10,7 @@ const Navigation = () => {
     <nav className={styles.navigation}>
       <Link to="/products">Products</Link>
       <Link to="/">Home</Link>
-      <Link to="/profile">Profile</Link>
+      {isAuthenticated && <Link to="/profile">Profile</Link>}
       {!isAuthenticated && (
         <Link
           onClick={() =>
