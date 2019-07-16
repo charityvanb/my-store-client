@@ -20,7 +20,7 @@ const Navigation = () => {
         </Link>
       )}
 
-      {isAuthenticated && <button onClick={() => logout()}>Log out</button>}
+      {isAuthenticated && <Link onClick={() => logout()}>Log out</Link>}
 
     </nav>
   )
