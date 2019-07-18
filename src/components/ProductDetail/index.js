@@ -11,7 +11,7 @@ class ProductDetail extends Component {
     // Fetch data for ONE product
     const id = this.props.match.params.id
     
-    fetch(`http://localhost:8080/api/products/${id}`)
+    fetch(`http://localhost:4000/api/products/${id}`)
       .then(res => res.json())
       .then(data => {
         console.log(data)
@@ -39,7 +39,7 @@ class ProductDetail extends Component {
   
     try {
       // Initiate checkout session to get session id
-      const response = await fetch('http://localhost:8080/api/checkout', {
+      const response = await fetch('http://localhost:4000/api/checkout', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

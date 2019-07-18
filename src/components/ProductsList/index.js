@@ -8,7 +8,7 @@ class Products extends Component {
   }
 
   componentDidMount() {
-    fetch('http://localhost:8080/api/products')
+    fetch('http://localhost:4000/api/products')
       .then(res => res.json())
       .then(data => {
         console.log(data.products)
