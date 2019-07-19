@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import Card from '../Card'
 import styles from './productdetail.module.scss'
+import Loader from '../Loader'
 
 class ProductDetail extends Component {
   state = {
-    product: {}
+    product: {},
+    isLoaded: false
   }
-
   componentDidMount() {
     // Fetch data for ONE product
     const id = this.props.match.params.id
@@ -16,7 +17,8 @@ class ProductDetail extends Component {
       .then(data => {
         console.log(data)
         this.setState({
-          product: data.product
+          product: data.product,
+          isLoaded: true
         })
       })
       .catch(error => {
@@ -64,6 +66,7 @@ class ProductDetail extends Component {
     return (
       <div className={styles.productdetail}>
         <h2>About {this.state.product.name}</h2>
+        {this.state.isLoaded ?
         <Card>
           <h2>{this.state.product.name}</h2>
           <img src={this.state.product.img_url} alt="product" />
@@ -71,6 +74,8 @@ class ProductDetail extends Component {
           <h3>Price: ${this.state.product.price / 100}.00</h3>
           <button onClick={this.initiateStripeCheckout}>Purchase</button>
         </Card>
+        :<Loader />
+        }
       </div>
     )
   }
