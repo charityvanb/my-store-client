@@ -1,4 +1,5 @@
 {
     "domain": "dev-5ilv96wt.auth0.com",
-    "clientId": "A5Y7qptzk6VfmVwdh62mRKYYO4RTNgCT"
+    "clientId": "A5Y7qptzk6VfmVwdh62mRKYYO4RTNgCT",
+    "audience": "http://localhost:4000"
   }
