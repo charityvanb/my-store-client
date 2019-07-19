@@ -39,8 +39,8 @@ class Products extends Component {
                 img_url={product.img_url}
                 price={product.price}
               />)
-        })}
-      </div>
+          })}
+        </div>
       </div>
     )
   }
