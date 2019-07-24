@@ -33,9 +33,9 @@ class ProductDetail extends Component {
     const lineItem = {
         name: product.name,
         description: product.description,
+        images: [product.img_url],
         amount: product.price,
-        img_url: [product.img_url],
-        amount: product.price,
+        currency: 'usd',
         quantity: 1
     }
   
