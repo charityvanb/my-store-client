@@ -7,7 +7,7 @@ import Profile from './components/Profile'
 // Component imports
 //Checking to see if it pushed properly
 
-import Home from './components/Home'
+import Home from './components/Home/index.js'
 import Navigation from './components/Navigation'
 import ProductsList from './components/ProductsList'
 import ProductDetail from './components/ProductDetail'

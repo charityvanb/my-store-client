@@ -1,6 +1,6 @@
 import React from 'react'
-import Loader from './Loader'
-import ladiesHats from '../images/ladiesHats.png'
+// import Loader from '../Loader'
+import ladiesHats from '../../images/ladiesHats.png'
 
 const Home = () => {
   return (
