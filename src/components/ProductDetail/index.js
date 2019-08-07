@@ -68,7 +68,7 @@ class ProductDetail extends Component {
         <h2>About {this.state.product.name}</h2>
         {this.state.isLoaded ?
         <Card>
-          <h2>{this.state.product.name}</h2>
+          {/* <h2>{this.state.product.name}</h2> */}
           <img src={this.state.product.img_url} alt="product" />
           <p>{this.state.product.description}</p>
           <h3>Price: ${this.state.product.price / 100}.00</h3>
