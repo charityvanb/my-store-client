@@ -1,6 +1,16 @@
 @import '../../styles/variables';
 
 // Card{
-//     grid-template-columns: 1fr 1fr;
-//     grid-gap: 1rem;
+//     // grid-template-columns: 1fr 1fr;
+//     // grid-gap: 1rem;
+//     width: 70%;
 //     }
+
+.productdetail{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    h2, p, h3{
+        color: $darktext;
+    }
+}
