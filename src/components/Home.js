@@ -1,12 +1,11 @@
 import React from 'react'
 import Loader from './Loader'
+import ladiesHats from '../images/ladiesHats.png'
 
 const Home = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Welcome Home!</h1>
-      </header>
+      <img src={ladiesHats} alt="Ladies' Hat Emporium"/>
     </div>
   )
 }
