@@ -19,9 +19,9 @@ describe('<Navigation /> functionality', () =>{
     
       const wrapper = shallow(<Navigation />)
     
-      expect(wrapper.find(Link).length).toBe(5)
+      expect(wrapper.find(Link).length).toBe(4)
     
-      expect(wrapper.find('button'))
+      expect(wrapper.find('Link'))
     })
 
   })
@@ -37,20 +37,21 @@ describe('<Navigation /> functionality', () =>{
   
       const wrapper = shallow(<Navigation />)
   
-      expect(wrapper.find(Link).length).toBe(4)
+      expect(wrapper.find(Link).length).toBe(5)
     })
   
-    it('<Navigation /> renders 1 button isAuthenticated = false', () => {
-      jest.spyOn(Auth0, 'useAuth0').mockImplementation(() => {
-        return {
-          isAuthenticated: false
-        }
-      })
+    // Note: I removed the button
+    // it('<Navigation /> renders 1 button isAuthenticated = false', () => {
+    //   jest.spyOn(Auth0, 'useAuth0').mockImplementation(() => {
+    //     return {
+    //       isAuthenticated: false
+    //     }
+    //   })
   
-      const wrapper = shallow(<Navigation />)
+    //   const wrapper = shallow(<Navigation />)
   
-      expect(wrapper.find('button').length).toBe(1)
-    })
+    //   expect(wrapper.find('button').length).toBe(1)
+    // })
 
   })
 })
